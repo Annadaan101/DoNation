@@ -1,0 +1,26 @@
+<!-- <div id="sidebar">
+	<ul id="sidebar-nav">
+		<li>Welcome <%= currentUser.firstName %></li>
+		<li><a href="/agent/dashboard">Dashboard</a></li>
+		<li><a href="/agent/collections/pending">My Pending Collections</a></li>
+		<li><a href="/agent/collections/previous">My Previous Collections</a></li>
+		<li><a href="/agent/profile">My Profile</a></li>
+		<li><a href="/auth/logout" class="btn">Logout</a></li>
+	</ul>
+</div> -->
+
+
+
+
+<!-- New Agent sidebar code starts here -->
+<div id="sidebar">
+	<div style="text-align: center;"><a href="/agent/profile"><img src="/assets/images/food-donation.png" alt="" style="width: 40%;margin-top: 10%;margin-bottom: 1%;"></div></a>
+	<ul id="sidebar-nav">
+		<li style="margin-top: 0;"><%= currentUser.firstName %> <%= currentUser.lastName %></li><br>
+		<li style="margin-top: 2%;"><a href="/agent/dashboard"><img src="/assets/images/speedometer.png" alt="" style="width:10%">&nbsp; Dashboard</a></li>
+		<li style="margin-top: 2%;"><a href="/agent/collections/pending"><img src="/assets/images/Pending.png" alt="" style="width:10%">&nbsp;&nbsp;Pending Collections</a></li>
+		<li style="margin-top: 2%;"><a href="/agent/collections/previous"><img src="/assets/images/packing.png" alt="" style="width:10%">&nbsp;&nbsp;Previous Collections</a></li>
+		<li style="margin-top: 2%; margin-bottom: 3%;"><a href="/agent/profile"><img src="/assets/images/user.png" alt="" style="width:10%">&nbsp;&nbsp;My Profile</a></li>
+		<li><a href="/auth/logout" style="padding-left: 0; color:red; font-family: 'Righteous', cursive; font-size:x-large;"><img src="/assets/images/shutdown.png" alt="" style="width:10%">&nbsp;&nbsp;Logout</a></li>
+	</ul>
+</div>

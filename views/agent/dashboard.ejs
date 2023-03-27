@@ -1,0 +1,29 @@
+<main>
+	<%- include('../partials/agentSidebar') %>
+	
+	<div id="main-wrapper">
+		
+		<div class="bg-white shadow-sm p-3">
+			<span class="me-3" id="sidebar-toggler-btn"><i class="fas fa-bars"></i></span>
+			<h5 class="m-0 color-theme d-inline-block" style="font-family: Cinzel; font-weight: bolder;">Dashboard</h5>
+		</div>
+		
+		<div class="d-flex gap-3 flex-wrap m-4 text-white">
+			
+			<div class="bg-primary rounded p-3" style="width: 300px; ">
+				<div style="text-align: center;"><img src="/assets/images/wait.png" alt="" style="width: 20%;"></div>
+				<div class="fs-1" style="text-align: center;"><%= numAssignedDonations %></div>
+				<div class="fs-5" style="text-align: center;">Pending Collections</div>
+			</div>
+			
+			<div class="bg-success rounded p-3" style="width: 300px;">
+				<div style="text-align: center;"><img src="/assets/images/Collected.png" alt="" style="width: 20%;"></div>
+				<div class="fs-1" style="text-align: center;"><%= numCollectedDonations %></div>
+				<div class="fs-5" style="text-align: center;" >Successful Collections</div>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+</main>
